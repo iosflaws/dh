@@ -29,7 +29,7 @@ local es_pedofilo = true
 -- // funciones para acortar codigo :]
 function anunciar_atentado_terrorista(fecha_del_atentado)
     AUDIOS_LOUD_DE_TRAP:SetCore("SendNotification",{
-        Title="TechWare",
+        Title="Aurora",
         Text=fecha_del_atentado,
         Icon="rbxthumb://type=Asset&id=1332213374&w=150&h=150"
        })
