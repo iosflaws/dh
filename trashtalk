@@ -1,72 +1,54 @@
-   local plr = game.Players.LocalPlayer
-repeat wait() until plr.Character
-local char = plr.Character
-
-local garbage = {
-    "ur bad";
-    "sonney boy";
-    "ez";
-    "my grandma has more skill than you";
-    "seed";
-    "sit son";
-    "trash";
-    "LOL";
-    "LMAO";
-    "imagine being you right now";
-    "xd";
-    "don't try LOL";
-    "you lose";
-    "why do you even try";
-    "I didn't think being this bad was possible";
-    "leave";
-    "no skill";
-    "so sad man.";
-    "bad";
-    "you're nothing";
-    "lol";
-    "so trash";
-    "so bad";
-    "ur salty";
-    "salty";
-    "look he's mad";
-    "cry more";
-    "keep crying";
-    "cry baby";
-    "hahaha I won";
-    "no one likes u";
-    "run 1s seed";
-    "thank you for your time";
-    "you were so close!";
-    "better luck next time!";
-    "rodent";
-    "HAHA";
-    "ill 5-0";
-    "just quit";
-    "time to take out the trash";
-    "did you get worse?";
-    "I'm surprised you haven't quit yet";
-
-
-
-
-
-
-
-
-
-
-
+local words = {
+    'ur bad',
+    'seed',
+    'im not locking ur just bad',
+    'kid im not locking XDXDXDXD ur just bad',
+    'sad',
+    'sonned',
+    'how did u fail to get me',
+	 'LMAO',
+    'imagine being you right now',
+    'xd',
+    'dont try LOL',
+    'you lose',
+    'why do you even try',
+    'I didnt think being this bad was possible',
+    'leave',
+    'no skill',
+    'so sad man.',
+    'bad',
+    'youre nothing',
+    'lol',
+    'so trash',
+    'so bad',
+    'ur salty',
+    'salty',
+    'look hes mad',
+    'cry more',
+    'keep crying',
+    'cry baby',
+    'hahaha I won',
+    'no one likes u',
+    'run 1s seed',
+    'thank you for your time',
+    'you were so close!',
+    'better luck next time!',
+    'rodent',
+    'HAHA',
+    'ill 5-0',
+    'just quit',
+    'time to take out the trash',
+    'did you get worse?',
+    'Im surprised you havent quit yet',
 }
 
+local player = game.Players.LocalPlayer
+local keybind = 'j'
 
-function TrashTalk(inputObject, gameProcessedEvent)
-    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
-        garbage[math.random(1,#garbage)],
-        "All"
-    )
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+player:GetMouse().KeyDown:connect(function(key)
+    if key == keybind then
+        event:FireServer(words[math.random(#words)], "All")
     end
-end
- 
-game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
