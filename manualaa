@@ -1,0 +1,51 @@
+getgenv().Enabled = false
+getgenv().LeftSide = Enum.KeyCode.A
+getgenv().RightSide = Enum.KeyCode.D
+getgenv().ForwardSide = Enum.KeyCode.W
+getgenv().BackwardsSide = Enum.KeyCode.S
+getgenv().LeftOffest = -5
+getgenv().RightOffest = 5
+getgenv().ForwardOffest = -5
+getgenv().BackwardsOffest = 5
+
+local UIS = game:GetService'UserInputService'
+
+UIS.InputBegan:Connect(function(keybind,loops)
+    if (not loops) then
+        if (keybind.KeyCode == getgenv().LeftSide) then
+            if getgenv().Enabled == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(getgenv().LeftOffest, 0, 0)
+            end
+        end
+    end
+end)
+
+UIS.InputBegan:Connect(function(keybind,loops)
+    if (not loops) then
+        if (keybind.KeyCode == getgenv().RightSide) then
+            if getgenv().Enabled == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(getgenv().RightOffest, 0, 0)
+            end
+        end
+    end
+end)
+
+UIS.InputBegan:Connect(function(keybind,loops)
+    if (not loops) then
+        if (keybind.KeyCode == getgenv().ForwardSide) then
+            if getgenv().Enabled == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, getgenv().ForwardOffest)
+            end
+        end
+    end
+end)
+
+UIS.InputBegan:Connect(function(keybind,loops)
+    if (not loops) then
+        if (keybind.KeyCode == getgenv().BackwardsSide) then
+            if getgenv().Enabled == true then
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 0, getgenv().BackwardsOffest)
+            end
+        end
+    end
+end)
