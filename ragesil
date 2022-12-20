@@ -8,7 +8,7 @@
 
 
    
-local Aiming = loadstring(game:HttpGet("https://pastebin.com/raw/P6G6DPbh"))()
+local Aiming = loadstring(game:HttpGet("https://pastebin.com/raw/UqGrPXks"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
