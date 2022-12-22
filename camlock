@@ -1,6 +1,7 @@
 
---RESOLVER
+
 game.StarterGui:SetCore("SendNotification", {Title = "Aurora", Text = "Camlock Enabled, Key is: Q", Icon = "rbxthumb://type=Asset&id=10333866470", Duration = 5, Button1 = "Okay"})
+
 getgenv().OldAimPart = "UpperTorso"
 getgenv().AimPart = "UpperTorso" 
     getgenv().AimlockKey = "q"
