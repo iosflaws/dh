@@ -1,3 +1,10 @@
+  wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Aurora.lua"; 
+Text = "Anti-Bag Enabled. Removed During Reset/Death"; 
+Duration = 10; 
+})
+
   local LP = game.Players.LocalPlayer;
 
     for i,v in ipairs(LP.Character:GetDescendants()) do
