@@ -15,7 +15,7 @@ local boxsettings = {
     box = {
         Showbox = true,
 
-        boxsize = Vector3.new(6.2, 6, 2.8), -- Box Size
+        boxsize = Vector3.new(3.2, 3, 2.8), -- Box Size
         markercolor = Color3.fromRGB(128, 0, 0), -- Marrker Color
         markersize = UDim2.new(1, 0, 3, 0) -- Marker Size
     }
