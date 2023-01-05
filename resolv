@@ -1,5 +1,10 @@
 --RESOLVER
-game.StarterGui:SetCore("SendNotification", {Title = "Aurora", Text = "Anti-lock Resolver Has Been Enabled.", Icon = "rbxthumb://type=Asset&id=10333866470", Duration = 5, Button1 = "Okay"})
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Aurora"; -- the title (ofc)
+Text = "Anti-Aim Resolver Enabled."; -- what the text says (ofc)
+Duration = 10; -- how long the notification should in secounds
+})
 
 local RunService = game:GetService("RunService")
 
