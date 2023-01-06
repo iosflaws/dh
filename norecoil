@@ -1,7 +1,7 @@
 
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
-Title = "Aurora.lua"; -- the title (ofc)
+Title = "Aurora.vip"; -- the title (ofc)
 Text = "No Recoil Enabled."; -- what the text says (ofc)
 Duration = 10; -- how long the notification should in secounds
 })
