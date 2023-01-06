@@ -1,9 +1,10 @@
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Aurora.vip"; -- the title (ofc)
-Text = "No Recoil Enabled."; -- what the text says (ofc)
+Text = "Upwards Anti-Aimbot Enabled.";
 Duration = 10; -- how long the notification should in secounds
 })
+
 
 getgenv().Sky = true 
 getgenv().SkyAmount = 90
